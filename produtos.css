@@ -27,59 +27,43 @@ nav a {
     font-size: 22px;
     text-decoration: none;
 }
-
-body {
-    
-}
-#banner {
-    width: 100%;
-}
-
-.principal {
-    height: 300px;
-    background: #CCCCCC;
-    
-    
-}
-h2 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 50px;
-    padding: 10px;
-}
-
-p {
-    text-align: center;
+.produtos {
     width: 940px;
-    vertical-align: top;
-    margin: 20px 50px 40px;
-    margin-left: 15%;   
+    margin: 0 auto;
+    padding: 50px 0;
 }
-#missao {
-    font-size: 20px;
-}
-
-em strong {
-    color: #FF0000;
-}
-.beneficios {
-    background: #FFFFFF;
-    height: 210px;
-}
-
-.beneficios h3 {
+.produtos li {
+    display: inline-block;
     text-align: center;
-    padding: 10px;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
 }
-.beneficios ul {
-    margin-left: 16%;
-    margin-right: 16%;
+.produtos li:hover {
+  border-color: #C78F19;
 }
-
-.itens {
-    font-style: italic;
+.produtos li:hover h2 {
+    font-size: 34px;
 }
-
+.produtos li:active {
+  border-color: #088C19;
+}
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.produto-descricao {
+    font-size: 18px;
+}
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
 footer {
     text-align: center;
     background: url("bg.jpg");
@@ -88,5 +72,5 @@ footer {
 .copyright {
     color: #FFFFFF;
     font-size: 13px;
-    margin: 20px 14%;
+    margin: 20px 0 0;
 }
