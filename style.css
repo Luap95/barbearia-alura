@@ -17,7 +17,6 @@ nav {
 	top: 110px;
 	right: 0;
 }
-
 nav li {
 	display: inline;
 	margin: 0 0 0 15px;
@@ -239,12 +238,14 @@ td, th {
 	h1 {
 		text-align: center;
 	}
+	h1 img {
+		height: 8em;
+	}
 	nav {
 		position: static;
-		
 	}
-	nav li {
-		margin: 0 0 0 center;
+	li a {
+		font-size: 18px;
 	}
 	.mapa p {
 		margin: 1em;
