@@ -2,10 +2,13 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Barbearia Alura</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
@@ -21,7 +24,7 @@
          </div>
     </header>
     <main>
-        <form>
+        <form class="formulario">
             <label for="nomesobrenome">Nome e sobrenome</label>
             <input type="text" id="nomesobrenome" class="input-padrao" required>
 
@@ -44,9 +47,9 @@
                 <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
                 
             </fieldset>
-            <fieldset>
+            <fieldset class="horario-atendimento">
                 <legend>Qual horário prefere ser atendido?</p>
-                <select>
+                <select class="seletor">
                     <option>Manhã</option>
                     <option>Tarde</option>
                     <option>Noite</option>
@@ -60,28 +63,30 @@
             
         </form>
         
-        <table>
-            <thead>
-                <tr>
-                    <th>Dia</th>
-                    <th>Horário</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Segunda</td>
-                    <td>8h ~ 20h</td>
-                </tr>
-                <tr>
-                    <td>Quarta</td>
-                    <td>8h ~ 20h</td>
-                </tr>
-                <tr>
-                    <td>Sexta</td>
-                    <td>8h ~ 20h</td>
-                </tr>
-             </tbody>
-        </table>
+        <section class="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>    
     </main>
     <footer>
         <img src="logo-branco.png" alt="Logo da Barbearia Alura">
