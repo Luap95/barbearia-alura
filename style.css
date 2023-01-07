@@ -230,34 +230,58 @@ td, th {
 	margin: 2em auto
 }
 /*responsividade*/
-@media screen and (max-width: 480px){
-	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+/* Thamires: Na largura máxima eu coloquei 900px porque senti de 480px não ia ficar responsivo em todos os 
+dispositivos, em tablet por exemplo.*/
+@media screen and (max-width: 900px){
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .formulario, .produtos {
 		width: auto;
-		margin: 1em;
 	}
+	/* Thamires: Removi a margem, aqui optei por deixar apenas a largura em auto e deixar a margem pra 
+	pra fazer  individualmente nas classes. Adicionei também as classes de conteudo principal das outras
+	 páginas (.formulario, .produtos) pra ficarem no mesmo padrão que a página principal. */
 	h1 {
 		text-align: center;
 	}
+	/*
 	h1 img {
 		height: 8em;
-	}
+	}*/
+	
 	nav {
 		position: static;
-	}
-	li a {
 		font-size: 18px;
+		text-align: center;
 	}
+	/* Thamires:  Aqui tirei a  "li a" e coloquei dentro de "Nav "  pra se referir a lista  de navegação 
+	pois  as alterações não estavam sendo feitas pelo css. Adicionei tabmbém um alinhameneto pro texto*/
+
+	.principal, .mapa-conteudo{
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	/*Thamires: O conteudo principal e o mapa ainda estavam muito colados as bordas, 
+	então adicionei um espaçamento aos 2*/
+	
 	.mapa p {
 		margin: 1em;
 	}
-	.lista-beneficios {
-		width: 100%;
+	.lista-beneficios, .imagem-beneficios  {
+		width: 70%;
 		margin: 1em;
 	}
-	.imagem-beneficios{
-		width: 100%;
+	
+	/* Thamires: Como a imagem de beneficios e a lista de beneficios são do mesmo bloco da página, 
+	fica melhor fomatar elas com as mesma definições, então juntei elas. 
+	Diminui um pouco a porcentagem da largura pra 70% pois o bloco estava maior que a 
+	página, com isso já sumiu aquela borda branca que estava sobrando na página Home*/
+
+	.video{
+		width: 90%;
 	}
-	 /*Pagina de produtos*/
+
+	/* Thamires: O video estava muito colado as bordas então apenas diminui um pouco ele pra ficar melhor a vizualização*/
+
+	 /*Pagina de proxdutos*/
 	 .produtos {
 		width: auto;
 		margin: 0 auto;
@@ -266,7 +290,10 @@ td, th {
 	 .produtos li {
 		display: block;
 		width: 97%;
+		margin-top: 2em;
 	 }
+	 /* Thamires: Com as alterações que eu fiz lá em cima a página de produtos já ficou certinha,
+	  só adicionei uma margem acima, porque a lista de produtos tinham ficados colados uns nos outros*/
 
 	 /*Página de contatos*/
 	 .formulario {
@@ -282,4 +309,6 @@ td, th {
 	  table {
 		margin: 20px 0 20px 15px;
 	  }
+	  /* Thamires: Na página de contato não mexi em nada, com as outras alterações ela 
+	  ja se encaixou perfeitamente :) */
 }
